@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import api from "../api";
 import TestimonialItem from "./TestimonialItem";
-import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import "./Testimonials.css";
 
 const Testimonials = () => {
@@ -55,10 +54,10 @@ const Testimonials = () => {
                     ))} 
                 </ul>
                 <button className="prev" onClick={prevSlide}>
-                    <FiChevronLeft/>
+                    <img src="img/left-arrow.svg" alt="Previous slide"/>
                 </button>
                 <button className="next" onClick={nextSlide}>
-                    <FiChevronRight/>
+                <img src="img/right-arrow.svg" alt="Next slide"/>
                 </button>
             </article>
         </section>
