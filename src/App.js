@@ -1,11 +1,11 @@
 import React from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import NavBar from './components/NavBar';
-import Home from './components/pages/Home';
-import Products from './components/pages/Products';
-import SingUp from './components/pages/SingUp';
+import NavBar from './components/navbar/NavBar';
+import Footer from './components/footer/Footer';
+import Home from './pages/home/Home';
+import Products from './pages/products/Products';
+import SignUp from './pages/signup/SingUp';
 import './App.css';
-import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,9 +14,9 @@ function App() {
         <NavBar/>
         <main> 
         <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/products" element={<Products/>}/>
-          <Route path="/sign-up" element={<SingUp/>}/>
+          <Route path="/" element={<Home />}/>
+          <Route path="/products" element={<Products />}/>
+          <Route path="/sign-up" element={<SignUp />}/>
         </Routes>
         </main>
         <Footer/>

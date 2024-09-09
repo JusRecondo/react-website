@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import emailValidation from "../utils/emailValidation";
+import emailValidation from "../../utils/emailValidation";
 
 const SignUpForm = () => {
     const [formValues, setFormValues] = useState({
@@ -30,7 +30,7 @@ const SignUpForm = () => {
         if(Object.keys(formErrors).length === 0 && isSubmit) {
             console.log(formValues);
         }
-    }, [formErrors]);
+    }, [formErrors, isSubmit]);
 
     const validateForm = (values) => {
         const errors = {};

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import emailValidation from "../utils/emailValidation";
+import emailValidation from "../../utils/emailValidation";
 import "./Footer.css";
 
 function Footer() {
